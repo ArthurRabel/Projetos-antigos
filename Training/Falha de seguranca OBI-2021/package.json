@@ -1,0 +1,11 @@
+{
+  "name": "desafiosenior",
+  "version": "1.0.0",
+  "description": "desafio senior",
+  "main": "pa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arthur rabelo",
+  "license": "ISC"
+}

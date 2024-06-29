@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;600&family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111111;
+}
+p{
+    font-family: "Poppins";
+    color: white;
+}
+.sectionHome{
+    background-image: url("../image/guriaCorrendo.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #111111;
+    height: 700px;
+}
+.header{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo img{
+    width: 185px;
+}
+.mobileMenu svg{
+    width: 35px;
+}
+.headerNav, .socialNetworks{
+    display: none;
+}
+.menuOptionMobile{
+    display: none;
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    background-color: #171717;
+    top: 0;
+    right: 0;
+}
+.menuOptionMobile ul{
+    list-style: none;
+    padding: 0;
+}
+.fecharMenu{
+    padding: 10px;
+}
+.menuOptionMobile ul li{
+    padding: 10px;
+}
+.menuOptionMobile ul li a{
+    font-family: "Poppins";
+    color: white;
+    font-size: calc(0.5vw + 15px);
+    text-decoration: none;
+    width: 100%;
+}
+.socialNetworksMobile{
+    padding: 0 10px 10px 10px;
+}
+.socialNetworksMobile svg{
+    width: 70px;
+    height: 70px;
+}
+.initialSectionSentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.initialSectionSentence>div{
+    width: 80%;
+}
+.initialSectionSentenceH1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Chakra Petch';
+    font-weight: 300;
+    font-size: calc(0.7vw + 20px);
+}
+.sectionSentenceBottom{
+    display: flex;
+    justify-content: center;
+}
+.sectionSentenceBottomP{
+    width: 80%;
+    text-align: center;
+    font-size: calc(0.5vw + 13px);
+}
+.sectionSentenceBottomP::after{
+    content: "";
+    width: 50vw;
+    height: 2px;
+    display: block;
+    margin: 20px auto 60px;
+    background-color: #692478;
+}
+.Competition>div{
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 45%;
+    min-width: 210px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Competition>div>h1, .Competition>div>p, .Competition>div input{
+    color: white;
+    text-align: center;
+}
+.Competition>div>h1{
+    color: #A23EB8;
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.Competition>div a{
+    width: 50%;
+}
+.Competition>div input{
+    background-color: #A23EB8;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.Map>div{
+    margin: 0 auto 20px;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CoresCorrida{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.divCoresCorrida{
+    margin-bottom: 10px;
+}
+.divCoresCorrida p {
+    font-size: 12px;
+    text-align: center;
+}
+.HrCoresCorrida1{
+    border-color: rgb(36, 221, 235);
+}
+.HrCoresCorrida2{
+    border-color: rgb(222, 54, 228);
+}
+.HrCoresCorrida3{
+    border-color: rgb(48, 206, 48);
+}
+
+.Map>div>img{
+    width: 80%;
+}
+.EndereçoDiv{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.Endereço{
+    margin-top: 20px;
+    width: 90%;
+}
+.Map>div svg{
+    width: 30px;
+}
+.alert{
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 2px rgb(236, 72, 72) solid;
+    width: 80%;
+    background-color: #171717;
+}
+.alert p{
+    text-align: center;
+}
+.cam{
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 80%;
+    min-width: 210px;
+    max-width: 1020px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.camDiv{
+    width: 100%;
+}
+.camDiv1{
+    margin-bottom: 10px;
+}
+.camDiv1, .camDiv2{
+    display: flex;
+    justify-content: space-between;
+}
+.camDiv1 a, .camDiv2 a{
+    width: 45%;
+}
+.camInput{
+    cursor: pointer;
+    width: 100%;
+    background-color: #A23EB8;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-family: "Poppins";
+}
+.footer{
+    width: 100%;
+    background-color: #A23EB8;
+}
+.footer div{
+    margin: auto;
+    padding: 15px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:480px) {
+    p{font-size: calc(0.7vw + 10px);}
+}
+@media (min-width:600px) {
+    .sectionHome{
+        height: 90vh;
+    }
+    .header{
+        width: 95%;
+    }
+    .mobileMenu{
+        display: none;
+    }
+    .headerNav, .socialNetworks{
+        display: block;
+        display: flex;
+    }
+    .headerNav ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .headerNav li{
+        margin: 0 10px;
+    }
+    .headerNav a{
+        font-family: 'Chakra Petch';
+        color: white;
+        text-decoration: none;
+        font-size: calc(1vw + 13px);
+    }
+    .initialSectionSentenceH1{
+        width: 80%;
+        text-align: start;
+        font-size: calc(0.7vw + 20px);
+    }
+    .sectionSentenceBottomP{
+        width: 60%;
+    }
+    .divCoresCorrida{
+        width: 30%;
+    }
+    .camDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    .camDiv1{
+        margin: 0;
+    }
+    .camDiv1, .camDiv2{
+        width: 48%;
+    }
+}
+@media (min-width:801px) {
+    p{font-size: calc(0.7vw + 12px);}
+    .divCoresCorrida{
+        width: 25%;
+    }
+    .CoresCorrida{
+        margin-bottom: -60px;
+    }
+    .Competition{
+        width: 95%;
+        max-width: 860px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Map>div{
+        width: 95%;
+        max-width: 1060px;
+    }
+    .alert{
+        width: 95%;
+        max-width: 860px;
+    }
+    .Competition>div{
+        width: 20%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .horizontal-img{
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .initialSectionSentenceH1{
+        width: 70%;
+    }
+    .EndereçoDiv{
+        margin-top: -60px;
+        width: 90%;
+    }
+    .Endereço{
+        margin: 0;
+    }
+}
+@media (min-width:1025px) {
+    p{font-size: calc(0.7vw + 9px);}
+    .headerNav a{
+        font-size: calc(0.7vw + 12px);
+    }
+    .Logo img{
+        width: 255px;
+    }
+    .initialSectionSentenceH1{
+        width: 70%;
+        font-size: calc(0.7vw + 30px)
+    }
+    .sectionHome{
+        height: 100vh;
+    }
+    .header{
+        width: 90%;
+    }
+}
+@media (min-width:1281px) {
+    p{font-size: calc(0.7vw + 5px);}
+    .sectionHome{
+        height: 120vh;
+    }
+}

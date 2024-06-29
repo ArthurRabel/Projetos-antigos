@@ -1,0 +1,295 @@
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Poppins:wght@200&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    
+    .Svg-Main{
+        width: 50vw;
+        height: 60vw;
+    }
+    .Home-first{
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.192);
+    }
+    .Home-first__Main{
+        display:flex; 
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    .Home-first__H1{
+        max-width: 90vw;
+        margin: 70px auto 50px;
+    }
+    .Home-first__Wrapper{
+        width: 50vw;
+    }
+    .Home-first__P{
+        max-width: 1200px;
+        margin-bottom: 100px;
+        margin: 20px 5vw 0 0;
+        text-align: center;
+    }
+
+    .Section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Section2__H2-PixoRetoSP{
+        text-align: center;
+        font-family: PixoRetoSP;
+        font-size: calc(5vw + 30px);
+        margin: 100px auto 0;
+        color: #7F35B2;
+    }
+    .Section2__Img{
+        margin-top: -10px;
+        width: 80vw;
+        max-width: 700px;
+    }
+    .Section2__Div{
+        background-image: url('../midia/img/index/colored-hand.png');
+        background-color: white;
+        background-position: top;
+        background-repeat: no-repeat;
+        padding: 0 0 100px 0;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .Section2__P{
+        margin: auto;
+        text-align: center;
+        max-width: 900px;
+    }
+
+    .Transition-Profile{
+        width: 100%;
+        height: 50px;
+        background-color: #35B0DE;
+        transform: skewY(-2deg);
+        position: relative;
+        top: 10px;
+        z-index: -1
+    }
+    .Section-Profile{
+        background-image: url(../midia/img/index/background-mobile-section-profile.png);
+        background-color: #35B0DE;
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 30px 0 100px;
+    }
+    .Section-Profile__h2{
+        color: rgb(206, 237, 250);
+    }
+    .Section-Profile__Wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .Section-Profile__Slides{
+        margin: 20px 0;
+        width: 70%;
+    }
+    .Section-Profile__Slide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px 20px;
+        margin: 20px auto;
+        width: 140px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
+    }
+    .Section-Profile__Slide__Img{
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.548);
+        border-radius: 10px;
+        margin-top: -10px;
+        height: 200px;
+    }
+    .Section-Profile__Slide__P{
+        padding: 20px 0 0;
+        text-align: center;
+    }
+    .section-Ending{
+        width: 90vw;
+        max-width: 1200px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    p{
+        word-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 14px;
+    }
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+    .Home-first__H1{
+        margin: 5vw 10vw 0 0;
+        max-width: 100%;
+    }
+    .Home-first__P{
+        max-width: 85%;
+    }
+    .Home-first__Main{
+        padding: 50px 0;
+    }
+    .Home-first__Wrapper{
+        width: 50vw;
+    }
+
+    .Section-Profile__Slide{
+        width: 170px;
+        border-radius: 17px;
+    }
+    .Section-Profile__Slide__Img{
+        border-radius: 12.5px;
+        margin-top: -12.5px;
+        height: 230px;
+    }
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .Svg-Main{
+        width: 45vw;
+        height: 55vw;
+    }
+
+    .Section2__H2-PixoRetoSP{
+        font-size: calc(5vw + 40px);
+    }
+    .Home-first__P{
+        max-width: 80%;
+    }
+
+    .Transition-Profile{
+        height: 60px;
+        top: 20px;
+    }
+    .Section-Profile{
+        background-image: url(../midia/img/index/background-tablet-section-profile.png);
+    }
+
+    .Section-Profile__Slide{
+        width: 150px;
+    }
+    .Section-Profile__Slide__Img{
+        border-radius: 12.5px;
+        margin-top: -12.5px;
+        height: 210px;
+    }
+    .section-Ending{
+        margin: 80px auto;
+    }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .Home-first__H1{
+        margin: 10vw 10vw 0 0;
+    }
+    .Svg-Main{
+        width: 40vw;
+        height: 50vw;
+    }
+    .Home-first__Main{
+        padding-bottom: 0px;
+    }
+    .Home-first__Wrapper{
+        width: 55vw;
+    }
+    .Home-first__P{
+        max-width: 83%;
+    }
+
+    .Section2__Img{
+        margin-top: -10px;
+        width: 80vw;
+        max-width: 700px;
+    }
+    .Section2__H2-PixoRetoSP{
+        margin: 150px auto 0;
+    }
+    .Section2__Div{
+        padding: 0 0 150px 0;
+    }
+
+    .Section-Profile{
+        padding: 50px 0 130px;
+        background-image: url(../midia/img/index/background-section-profile.png);
+        background-size: contain;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .Svg-Main{
+        width: 38vw;
+        height: 46vw;
+    }
+    .Home-first__Wrapper{
+        width: 60vw;
+    }
+    .Home-first__P{
+        max-width: 100%;
+    }
+
+    .Transition-Profile{
+        height: 70px;
+        top: 30px;
+    }
+
+    .Section-Profile{
+        padding: 40px 0 70px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .Svg-Main{
+        width: 34vw;
+        height: 42vw;
+        max-width: 746px;
+        max-height: 936px;
+    }
+    .Home-first__Wrapper{
+        width: 65vw;
+    }
+    .Home-first__H1{
+        margin: 12vw 10vw 30px 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .Section2__H2-PixoRetoSP{
+        font-size: 100px;
+        margin: 200px auto 0;
+    }
+    .Section2__Div{
+        padding: 0 0 200px 0;
+    }
+
+    .Transition-Profile{
+        height: calc(100px + 0.5vw);
+        transform: skewY(-1.5deg);
+        top: 50px;
+    }
+
+    .Section-Profile{
+        padding: 80px 0 180px;
+    }
+    .Section-Profile__Slide{
+        width: 170px;
+        border-radius: 17px;
+    }
+    .Section-Profile__Slide__Img{
+        border-radius: 12.5px;
+        margin-top: -12.5px;
+        height: 230px;
+    }
+    .section-Ending{
+        margin: 100px auto;
+    }
+}

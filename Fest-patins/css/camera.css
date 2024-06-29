@@ -1,0 +1,22 @@
+.MsgError{
+    height: 70vh;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.divMsgError{
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    max-height: 800px;
+    border: 4px #171717 solid;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divMsgError svg{
+    width: calc(5vw + 50px);
+    height: calc(5vw + 50px);
+}

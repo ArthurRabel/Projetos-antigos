@@ -1,0 +1,284 @@
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    width: 100%
+    background-color: variables.$background-color1
+    font-family: Arial, Helvetica, sans-serif
+
+h1
+    font-family: 'Roboto', sans-serif
+
+h2, h3, p
+    font-family: 'Zen Maru Gothic', sans-serif
+
+#section1
+    width: 100vw
+    height: 50vw
+    max-width:100%
+    display: flex
+    flex-direction: row-reverse
+    justify-content: center
+    align-items: center
+    @media (max-width: variables.$breakpoint-tablet)
+        height: 65vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 125vw
+        display: block
+
+    &-text
+        height: 15vw
+        @media (max-width: variables.$breakpoint-tablet)
+            height: 20vw
+        @media (max-width: variables.$breakpoint-cell)
+            width: 70vw
+            margin: 2% 0 0 15%
+
+        h1
+            color: variables.$primary-color
+            font-size: 5vw
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 7vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 9vw
+
+        h2
+            font-size: 2.5vw
+            color: #ffffff
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 3vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 5vw
+        h3
+            font-size: 1.5vw
+            color: #ffffff
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 2vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 3.5vw
+
+        a
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+            button
+                font-family: 'Zen Maru Gothic', sans-serif
+                font-size: 1.5vw
+                border: 0.2vw solid
+                border-color: variables.$primary-color
+                border-radius: 50px
+                color: white
+                background-color: variables.$background-color1
+                padding: 0 5% 1.2% 5%
+                margin: 1% 0
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+                -webkit-user-select: none  
+                -moz-user-select: none     
+                -ms-user-select: none  
+                user-select: none
+                cursor: pointer
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 2.5vw
+                    margin: 2% 0
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 4vw
+                    border-width: 0.6vw
+                    margin: 3% 0
+
+            button:hover
+                background-color: variables.$primary-color
+
+    &-svg
+        svg
+            @media (max-width: variables.$breakpoint-cell)
+                width: 75vw
+                height: 55vw
+                margin: 7% 0 8% 10%
+
+
+#section2
+    background-color: variables.$background-color2
+    @media (max-width: variables.$breakpoint-cell)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 90vw
+        
+    &-partSuperior
+        width: 100vw
+        height: 50vw
+        max-width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        @media (max-width: variables.$breakpoint-cell)
+            height: 40vw
+            margin-bottom: 3vw
+        
+
+        &-div1
+            width: 25vw
+            height: 27vw
+            border-radius: 20px
+            margin-right: 2vw
+            background-color: rgba(255, 255, 255, 0.65)
+            @media (max-width: variables.$breakpoint-tablet)
+                width: 35vw
+                height: 37vw
+
+        
+        &-div2
+            width: 40vw
+            height: 27vw
+            margin: 1vw
+            @media (max-width: variables.$breakpoint-tablet)
+                height: 37vw
+
+            &-partSuperior
+                margin-bottom: 2vw
+
+                h2
+                    color: white
+                    font-size: 3vw
+                    font-weight: bold
+                    margin-bottom: 1vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 4vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 4.5vw
+                        margin-bottom: 0.5vw
+
+                p
+                    color: white
+                    font-size: 1.5vw
+                    font-family: 'Zen Maru Gothic', sans-serif
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 2vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 3vw
+
+            &-partInferior
+                display: grid
+                grid-template-columns: 20vw 20vw
+                grid-template-rows: 5vw 5vw
+                grid-gap: 1.5vw 3vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    grid-template-columns: 23vw 23vw
+                    grid-template-rows: 7vw 7vw
+                    grid-gap: 3vw 3vw
+                @media (max-width: variables.$breakpoint-cell)
+                    display: none
+
+                h3
+                    color: variables.$primary-color
+                    font-size: 2vw
+                    font-weight: bold
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 2.5vw
+
+                p
+                    color: white
+                    font-size: 1.5vw
+                    margin-bottom: 1.7vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 2vw
+
+#section2-partInferior
+    display: none
+    margin-top: 3vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 30vw
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+        &-Mobile
+            margin-bottom: 5vw
+            display: grid
+            grid-template-columns: 35vw 35vw
+            grid-template-rows: 10vw 10vw
+            grid-gap: 6vw 5vw
+    
+            h3
+                color: variables.$primary-color
+                font-size: 3.5vw
+                font-weight: bold
+                margin-bottom: 0.1vw
+
+            p
+                color: white
+                font-size: 3vw
+                margin-bottom: 1.5vw
+
+#section3
+    width: 100vw
+    height: 45vw
+    max-width: 100%
+    @media (max-width: variables.$breakpoint-tablet)
+        height: 45vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 70vw
+
+    h1
+        font-size: 2vw
+        color: white
+        text-align: center
+        padding: 5vw 5vw 3vw 5vw
+        @media (max-width: variables.$breakpoint-tablet)
+            font-size: 3vw
+        @media (max-width: variables.$breakpoint-cell)
+            font-size: 5vw
+            margin: 3% 0
+    
+    &-div
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        display: grid
+        grid-template-columns: 9vw 9vw 9vw
+        grid-template-rows: 10vw 10vw
+        grid-gap: 3vw 5vw   
+        @media (max-width: variables.$breakpoint-tablet)
+            grid-template-columns: 10vw 10vw 10vw
+            grid-template-rows: 12vw 12vw
+            grid-gap: 3vw 5vw 
+        @media (max-width: variables.$breakpoint-cell)
+            grid-template-columns: 15vw 15vw 15vw
+            grid-template-rows: 19vw 19vw
+            grid-gap: 4vw 5vw 
+        .skillDominada
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: variables.$background-color2
+            border-radius: 3px
+                
+            svg
+                @media (max-width: variables.$breakpoint-tablet)
+                    height: 7vw
+                    width: 7vw
+                @media (max-width: variables.$breakpoint-cell)
+                    height: 12vw
+                    width: 12vw
+
+        p
+            color: white
+            font-size: 1.3vw
+            text-align: center
+            margin-top: 0.5vw
+            @media (max-width: variables.$breakpoint-tablet)
+                margin-top: 0.3vw
+                font-size: 2vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 2.5vw

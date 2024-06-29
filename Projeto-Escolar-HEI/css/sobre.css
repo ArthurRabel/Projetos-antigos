@@ -1,0 +1,171 @@
+
+/*seção1*/
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+.section1 h1{
+    color: var(--cor-principal);
+    margin: 55px 0 30px ;
+    text-align: center;
+    font-size:  calc(1vw + 15px);
+}
+.section1 p{
+    margin: 0 auto 5px;
+    font-size: calc(0.5vw + 10px);
+}
+.midiaWidth{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.video-container{
+    height: 0;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+    background-color: red;
+}
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*seção2*/
+
+.section2{
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 h1{
+    color: white;
+    font-weight: 500;
+    margin: 55px 0 30px 0;
+    font-size:  calc(1vw + 15px);
+}
+
+.section2Div{
+    max-width: 1200px;
+    margin: 0 0 30px;
+}
+.SectionDivInPerson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.SectionDivInPerson>svg{
+    width: 50vw;
+    height: 50vw;
+}
+.SectionDivInPerson hr{
+    width: 190px;
+}
+.SectionDivInPerson p{
+    color: white;
+    text-align: center;
+}
+.SectionDivInPerson img{
+    max-width: 100%;
+    max-height: 190px;
+    margin-bottom: 20px;
+}
+#SectionDivInPersonSpace{
+    display: none;
+}
+.subP{
+    font-size: calc(0.5vw + 10px);
+    width: 80%;
+}
+.SectionDivInPerson div{
+    margin: 10px 0;
+}
+@media (min-width:480px) {
+    .SectionDivInPerson>svg{
+        width: 40vw;
+        height: 40vw;
+    }
+    .subP{
+        width: 60%;
+    }
+}
+@media (min-width:600px) {
+    .section2 h1{
+        font-size:  calc(1vw + 25px);
+    }
+    .SectionDivInPerson>svg{
+        width: 30vw;
+        height: 30vw;
+    }
+    .subP{
+        font-size: calc(0.5vw + 10px);
+        width: 100%;
+    }
+    .section2Div{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: calc(50 + 40vw) 65vw 60vw 60vw;
+        grid-column-gap: 7vw;
+    }
+}
+@media (min-width:801px) {
+    .section1{width: 80%;}
+    .subP{
+        font-size: calc(0.5vw + 8px);
+        width: 100%;
+    }
+    .section2Div{
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-template-rows: 48vw 38vw 40vw;
+        grid-column-gap: 15vw;
+    }
+    .SectionDivInPerson>svg{
+        width: 15vw;
+        height: 15vw;
+    }
+    #SectionDivInPersonSpace{
+        display: block;
+    }
+}
+@media (min-width:1025px) {
+    .section2Div{
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-template-rows: 35vw 35vw 35vw;
+        grid-column-gap: 10vw;
+    }
+}
+@media (min-width:1281px) {
+    .subP{
+        font-size: 15px;
+        width: 100%;
+    }
+    .SectionDivInPerson>svg{
+        width: 150px;
+        height: 150px;
+    }
+    .section2Div{
+        grid-template-columns: 255px 255px 255px;
+        grid-template-rows: 400px 400px 400px;
+        grid-column-gap: 100px;
+    }
+}
+.links{
+    font-family: 'Roboto', sans-serif;
+}
+.links:hover{
+    color: white;
+    text-decoration: underline;
+}
+#mark{
+    color: #5271ff;
+}

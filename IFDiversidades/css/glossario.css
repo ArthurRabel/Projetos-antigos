@@ -1,0 +1,160 @@
+@media (min-width:320px) {
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Poppins:wght@200&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    .BackgroundImgTop, .BackgroundImgBottom{
+        background-color: #ffffff;
+        height: 150px; 
+        width: 100%; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+    .BackgroundImgTop{
+        background-image: url("../midia/img/glossario/faixa\ glossario.png");
+        background-position: bottom;
+    }
+    .Section-Main{
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto 0;
+    }
+    .Section-Main__Content-Main{
+        width: 100%;
+    }
+    .section-main__Nav{
+        display: none;
+    }
+    .Opening{
+        width: 85vw;
+        max-width: 1200px;
+        margin: -20px auto 0;
+    }
+    .Opening__H1{
+        font-family: 'Baloo Da 2', cursive;
+        font-weight: 600;
+        font-size: calc(0.5vw + 20px);
+    }
+    .Opening__P{
+        margin: 15px 0 25px;
+    }
+    .ABCMobile{
+        margin: 30px auto;
+    }
+    .ABCMobile__Table{
+        margin: auto;
+    }
+    .ABCMobile__Table tr{
+        border: 5px solid white;
+        background-color: #ececec;
+    }
+    .ABCMobile__Table td{
+        padding: 7px;
+        text-align: center;
+        font-family: 'Reboto', sans-serif;
+        font-size: calc(0.5vw + 15px);
+    }
+    .Word{
+        margin: 0 0 20px;
+        padding: 10px;
+        box-shadow: 2px 2px 7px rgba(10, 10, 10, 0.199);
+    }
+    .Word__Opening{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Word__Signification{
+        padding: 10px;
+        background-color: #ececec;
+    }
+
+    .Word__IconOpen--active{
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+    .Word__IconOpen--disable{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+    .Word__Signification--active{
+        transition: .3s;
+    }
+    .Word__Signification--active > p{
+        opacity: 1;
+        transition: .1s;
+        transition-delay: .2.5s;
+    }
+    .Word__Signification--disable{
+        padding: 0px;
+        height: 0px;
+        transition: .3s;
+    }
+    .Word__Signification--disable > p{
+        opacity: 0;
+        transition: .1s;
+    }
+
+    .BackgroundImgBottom{
+        background-image: url("../midia/img/glossario/faixa\ glossario\ down.png");
+        background-position: top;
+    }
+
+    .titulo-principal{
+        font-family: 'Baloo Da 2', cursive;
+        font-weight: bold;
+        padding-top: 30px;
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 60px;
+    }
+}
+@media (min-width:600px) {
+    .BackgroundImgTop, .BackgroundImgBottom{
+        height: 180px;
+    }
+    .ABCMobile{
+        display: none;
+    }
+    .Section-Main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Section-Main__Content-Main{
+        width: 90%;
+    }
+    .section-main__Nav{
+        display: block;
+    }
+    .section-main__Ul{
+        padding: 10px;
+        box-shadow: 2px 2px 7px rgba(10, 10, 10, 0.199);
+    }
+    .section-main__Ul li{
+        text-align: center;
+        padding: 5px;
+        margin: 5px 0;
+        border-bottom: 1px solid black;
+    }
+    .section-main__Ul li:hover{
+        background-color: rgb(247, 245, 245);
+    }
+}
+@media (min-width:801px) {
+    .Section-Main__Content-Main{
+        width: 91.5%;
+    }
+}
+@media (min-width:1025px) {
+    .BackgroundImgTop, .BackgroundImgBottom{
+        height: 200px;
+    }
+    .Section-Main__Content-Main{
+        width: 93%;
+    }
+}
+@media (min-width:1281px) {}

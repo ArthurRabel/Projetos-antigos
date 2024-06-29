@@ -1,0 +1,60 @@
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap')
+
+#section1
+    background-color: variables.$background-color2
+    width: 80vw
+    border-radius: 20px
+    padding: 3vw
+    margin: 3vw auto
+
+    &-titulo    
+        text-align: center
+        color: white
+        margin: 0 auto 3vw
+        font-size: calc(2vw + 8px)
+
+    &-Content
+        display: flex
+        justify-content: center
+        @media (max-width: variables.$breakpoint-cell)
+            display: flex
+            flex-direction: column
+
+        &-divInfo
+            color: white
+            padding: 0 2vw
+            width: 35vw
+            margin-bottom: 5vw
+            @media (max-width: variables.$breakpoint-cell)
+                width: auto
+
+            &-superior
+                display: flex
+                align-items: center
+
+                h2
+                    font-size: calc(2vw + 6px)
+
+                svg
+                    width: 5vw
+                    height: 5vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        width: 6.5vw
+                        height: 6.5vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        width: 8vw
+                        height: 8vw
+
+            #InfoDetalhes
+                margin-bottom: 1vw
+
+            p
+                font-size: calc(1vw + 8px)
+    
+#matriculaCertificado
+    max-width: 38vw
+    width: auto
+    height: auto
+    @media (max-width: variables.$breakpoint-cell)
+        max-width: 80vw

@@ -1,0 +1,127 @@
+/*tela de 220px até 320px*/
+
+/*seção 1*/
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    max-width: 1500px;
+}
+.section1Svg{
+    margin: auto;
+}
+.section1Text{
+    margin: 0px 20px 20px;
+}
+.section1 div h1{
+    font-size:  calc(1vw + 12px);
+    color: var(--cor-principal);
+}
+.section1 div h2{
+    font-size:  calc(1vw + 10px);
+    font-weight: 300;
+}
+.section1 div p{
+    font-size:  calc(1vw + 8px);
+}
+.section1 div svg{
+    width: 73vw;
+    height: 48vw;
+}
+
+/*seção2*/
+
+.section2{
+    width: 100%;
+    background-color: var(--cor-principal);
+}
+.section2 h2{
+    color: white;
+    font-weight: 500;
+    font-size: calc(1vw + 15px);
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+.section2 p{
+    text-align: center;
+    font-size: calc(0.5vw + 10px);
+    color: white;
+    margin: 0 auto 40px;
+    width: 95%;
+}
+.divSvg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.divSvg svg{
+    width: 73vw;
+    height: 48vw;
+    margin: auto;
+}
+.sectionFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divSection ul{
+    list-style: none;
+    width: 90vw;
+    margin: 20px auto 40px;
+}
+.divSection ul li{ 
+    margin: 10px 0;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-bottom: 3px solid #3a5eff;;
+    font-size: calc(0.5vw + 10px);
+    color: white;
+}
+.divSection ul li a{
+    width: 100%;
+    font-size: calc(0.5vw + 10px);
+    color: white;
+}
+
+@media (min-width:430px) {
+    .section1 div h1{font-size: calc(1vw + 17px);}
+    .section1 div h2{font-size: calc(1vw + 15px);}
+    .section1 div p{font-size: calc(1vw + 12px);}
+    .section2 h2{font-size: calc(1vw + 15px);}
+    .section2 p{font-size: calc(1vw + 12px); width: 90%;}
+    .divSection ul li{font-size: calc(1vw + 12px);}
+    .divSection ul li a{font-size: calc(1vw + 12px);}
+}
+@media (min-width:801px) {
+    .section1 div h1{font-size: calc(1vw + 20px);}
+    .section1 div h2{font-size: calc(1vw + 18px);}
+    .section1 div p{font-size: calc(1vw + 13px);}
+    .section2 h2{font-size: calc(1vw + 20px);}
+    .section2 p{font-size: calc(1vw + 13px); width: 85%;}
+    .divSection ul li{font-size: calc(1vw + 13px);}
+    .divSection ul li a{font-size: calc(1vw + 13px);}
+}
+@media (min-width:1020px) {
+    .section1{flex-direction:row;}
+    .section1Text{padding: 30px;}
+    .section1 div h1{font-size: calc(1vw + 14px);}
+    .section1 div h2{font-size: calc(1vw + 12px);}
+    .section1 div p{font-size: calc(1vw + 7px);}
+    .section1 div svg{width: 43vw;height: 38vw;}
+    .section2 h2{font-size: calc(1vw + 15px);}
+    .section2 p{font-size: calc(1vw + 7px); width: 80%;}
+    .sectionFlex{flex-direction: row; justify-content: flex-start; margin: 0 40px;}
+    .divSvg{width: 50%;}
+    .divSvg svg{width: 43vw;height: 38vw;}
+    .divSection ul{width: auto;}
+    .divSection ul li{font-size: calc(1vw + 7px); padding: 20px;}
+    .divSection ul li a{font-size: calc(1vw + 7px);}
+}
+@media (min-width:1281px) {
+    .section1{max-width: none;padding: 40px;margin:50px auto;}
+}

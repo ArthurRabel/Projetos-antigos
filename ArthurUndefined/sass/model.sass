@@ -1,0 +1,108 @@
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    width: 100%
+    background-color: variables.$background-color1
+    font-family: Arial, Helvetica, sans-serif
+
+h1
+    font-family: 'Roboto', sans-serif
+
+h2, h3, p
+    font-family: 'Zen Maru Gothic', sans-serif
+
+#sectionMenu
+    height: 4vw
+    width: 100vw
+    max-width:100%
+    border-bottom: 0.5px solid
+    border-bottom-color: rgba(98, 101, 165, 1)
+    background-color: variables.$background-color1
+    display: flexbox
+    align-items: center
+    @media (max-width: variables.$breakpoint-tablet) 
+        height: 8vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 15vw
+
+    &-div
+        height: 100%
+        width: 20vw
+        @media (max-width: variables.$breakpoint-tablet) 
+            width: 27.5vw 
+        @media (max-width: variables.$breakpoint-cell)
+            width: 46.5vw
+        span
+            font-size: 3vw
+            color: #ffffff
+            margin: 2% 7%
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+            -webkit-user-select: none  
+            -moz-user-select: none     
+            -ms-user-select: none  
+            user-select: none
+            cursor: pointer
+            @media (max-width: variables.$breakpoint-tablet) 
+                font-size: 6.5vw  
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 12vw
+
+        span:hover
+            color: variables.$primary-color
+
+#optionsMenu
+    background-color: variables.$background-color2
+    padding: 0 0 100vh 0
+    position: absolute
+    z-index: 100
+    display: none
+    box-shadow: 1px 0 10px variables.$background-color1
+
+    ul
+        list-style: none
+
+        li
+            display: flex
+            justify-content: flex-end
+            text-align: right
+            &:hover
+                background-color: variables.$background-color3
+        
+            @media (max-width: variables.$breakpoint-cell)
+                padding: 2vw 5vw
+                margin: 2vw
+
+            a
+                padding: 1.5vw 2.6vw 1.5vw 10vw
+                text-align: right
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+                text-decoration: none
+                font-size: 1.5vw
+                color: white
+                @media (max-width: variables.$breakpoint-tablet)
+                    padding: 1.5vw 2.6vw 1.5vw 15vw
+                    font-size: 2vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 3vw        
+
+footer
+    color: #babbc9
+    width: 100vw
+    max-width: 100%
+    background-color: variables.$background-color2
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    span
+        padding: calc(1vw + 8px)
+        font-size: calc(1vw + 8px)
+        

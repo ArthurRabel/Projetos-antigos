@@ -1,0 +1,224 @@
+.Conteudo{
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Conteudo h2{
+    font-size: calc(0.5vw + 13px);
+    text-align: center;
+    margin: 30px auto 15px;
+}
+.Conteudo p{
+    font-size: calc(0.5vw + 11px);
+    margin: 0px auto 20px;
+}
+.Conteudo img{
+    width: 90%;
+}
+.ConteudoFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Name{
+    margin: 30px 0 0;
+    width: 100%;
+}
+.Name p{
+    text-align: end;
+    font-weight: 600;
+}
+
+/*artigo anterior e o proximo*/
+
+.navBottom nav{
+    margin: 0px auto 40px;
+    width: 85%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.navBottom nav a{
+    text-decoration: none;
+    font-size: calc(0.5vw + 13px);
+    color: var(--cor-principal);
+    display: flex;
+}
+.navBottom nav a p{
+    margin-top: 3px;
+}
+#IconUp{
+    font-size: calc(0.5vw + 25px);
+    margin: 0px 5px;
+}
+
+@media (min-width:801px) {
+    .Conteudo{width: 80%;}
+    .ConteudoFlex{flex-direction: row; align-items: flex-start; justify-content: space-between;} 
+    .Conteudo img{width: 80%;}
+    .ConteudoFlex img{width: 35%;margin: 0 5% 0 5%;}
+    .Conteudo h2{font-size: calc(0.5vw + 17px);margin: 35px 0 15px;}
+    .ConteudoFlex p{font-size: calc(0.5vw + 12.5px);width: 60%;margin: 0;}
+    .navBottom nav{margin: 25px auto 50px;}
+}
+@media (min-width:1020px) {
+    .Conteudo img{width: 60%;}
+    .Conteudo h2{font-size: calc(0.5vw + 20px);margin: 40px 0 30px;}
+    .Conteudo p{font-size: calc(0.5vw + 15px);}
+    .navBottom nav{margin: 30px auto 60px;}
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.links{
+
+    font-family: 'Roboto', sans-serif;
+}
+.links:hover{
+    color: white;
+    text-decoration: underline;
+}
+h1, h2, h3{
+    color: rgba(44, 62, 80, 1);
+}
+.seta{
+    width: 50%;
+}
+.navBottom #antprox{
+    margin: 14px auto -64px;
+    width: 85%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+#linkpersonfemin{
+    background-image: linear-gradient(to bottom, rgb(252, 252, 252), rgb(230, 254, 255), rgb(194, 250, 255));
+    margin-top: 50px;
+    height: 400px;
+    width: 999px;
+}
+#pdiv{
+    margin-top: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+#botao{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(240, 253, 255, 1);
+    background-color: rgba(82, 113, 255, 1);
+    width: 700px;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+#botao:hover{
+    background-color: rgba(44, 62, 80, 1);
+}
+#divbutton{
+    text-align: center;
+}
+#imgFundo{
+    width: 100%;
+}
+#legenda{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(72, 72, 72, 1)
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+#personagens{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    color: rgba(44, 62, 80, 1);
+}
+#charlesbabbage{
+    height: 50%;
+}
+#legendass{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(72, 72, 72, 1)
+}
+#hquatro{
+    color: rgba(44, 62, 80, 1);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#linktextos{
+    color: #5271FF;
+}
+#linktextos:hover{
+    color: #354aaa;
+    text-decoration: underline;
+}
+#legends{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(72, 72, 72, 1);
+}
+#jgimitacao span{
+    color: #5271FF;
+    text-decoration: underline;
+}
+
+#enigma{
+    width: 300px;
+    height: 250px;
+}
+#legendz{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(72, 72, 72, 1);
+}
+#bombaeletromecanica{
+    width: 300px;
+    height: 400px;
+}
+#hfor{
+    color: rgba(44, 62, 80, 1);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#jgimitacao{
+    background-color: #5272ff21;
+    width: 900px;
+}
+#google{
+    width: 50%;
+}
+#facebook{
+    width: 40%;
+}
+#video{
+    background-color: rgb(17, 96, 175);
+    width: 860px;
+    height: 343px;
+    padding-top: 27px;
+}
+#jankoum{
+    height: 400px;
+    width: 360px;
+}
+#bug{
+    width: 30%;
+}
+#lktxt{
+    color: #f6f8ff;
+    font-size: 16px;
+}
+#btnbiblio{
+    background-color: #5271FF;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    border-color: #5271FF;
+    box-shadow: none;
+}
+#btnbiblio:hover{
+    background-color: #253372;
+
+}

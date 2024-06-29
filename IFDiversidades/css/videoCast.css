@@ -1,0 +1,134 @@
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    body{
+        background-image: url('../midia/img/videoCast/background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    main{
+        max-width: 1600px;
+        margin: auto;
+    }
+    .Video-Main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Video-Main__Iframe{
+        width: 90%;
+        height: calc(90vw / 1.7);
+        margin: 20px 0 20px;
+    }
+    .Video-Main__Title{
+        width: 90%;
+    }
+    .Video-Main__Hr{
+        width: 200px;
+        margin: 0;
+        border: 1px solid #0500FF;
+    }
+    .Video-Main__Description{
+        background-color: #D1D1D1;
+        border-radius: 15px;
+        padding: 10px;
+        width: 90%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    .Video-Main__Description__P,.video-List__P{
+        font-weight: 100;
+    }
+
+    .video-List{
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-List__li{
+        width: 90%;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+        box-sizing: border-box;
+    }
+    .video-List__a{
+        display: flex;
+    }
+    .video-List__Thumbnail{
+        width: 37%;
+        margin-right: 3%;
+        background-color: rgb(65, 65, 65);
+    }
+    .video-List__Info{
+        width: 60%;
+    }
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Video-Main{
+        width: 60%;
+    }
+    .Video-Main__Iframe{
+        width: 95%;
+        height: calc(60vw / 1.7);
+    }
+    .Video-Main__Title{
+        width: 95%;
+    }
+    .Video-Main__Description{
+        width: 95%;
+    }
+    .video-List{
+        width: 40%;
+    }
+    .video-List__li{
+        width: 95%;
+    }
+    .video-List__a{
+        flex-direction: column;
+    }
+    .video-List__Thumbnail{
+        width: 80%;
+        height: 100px;
+    }
+    .video-List__Info{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .Video-Main__Iframe{
+        width: 95%;
+        height: calc(60vw / 1.7);
+    }
+    .video-List__a{
+        flex-direction: row;
+    }
+    .video-List__Thumbnail{
+        width: 40%;
+        height: 100px;
+    }
+    .video-List__Info{
+        width: 60%;
+        margin-top: 0;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .Video-Main__Iframe{
+        width: 95%;
+        max-width: 940px;
+        height: calc(50vw / 1.7);
+        max-height: 550px;
+    }
+}

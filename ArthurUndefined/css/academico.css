@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+#section1-tituloPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw;
+  color: white;
+  font-size: calc(2vw + 10px);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media (max-width: 1100px) {
+  #section1-tituloPrincipal {
+    font-size: calc(2vw + 15px);
+  }
+}
+@media (max-width: 700px) {
+  #section1-tituloPrincipal {
+    font-size: calc(2vw + 20px);
+    margin: 4vw;
+  }
+}
+#section1-Curso-Andamento {
+  margin: 0 0 3vw 5vw;
+}
+#section1-Curso-Andamento-Superior {
+  margin: 0 0 0.5vw 3vw;
+  display: flex;
+  align-items: center;
+}
+#section1-Curso-Andamento-Superior h2 {
+  color: white;
+  font-size: calc(1.5vw + 10px);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento-Superior h2 {
+    font-size: 4vw;
+  }
+}
+#section1-Curso-Andamento-Superior svg {
+  width: 5vw;
+  height: 5vw;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento-Superior svg {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+#section1-Curso-Andamento hr {
+  width: 30vw;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Andamento hr {
+    width: 35vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento hr {
+    width: 55vw;
+  }
+}
+#section1-Curso-Andamento ul {
+  display: flex;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0 0 -5vw;
+  }
+}
+#section1-Curso-Andamento ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 2vw 0vw 1vw;
+  width: 25vw;
+  height: 6vw;
+  list-style: none;
+  border-radius: 20px;
+  padding: 2vw;
+  background-color: #0e1046;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Andamento ul li {
+    width: 32vw;
+    height: 9vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento ul li {
+    width: 75vw;
+    height: 20vw;
+  }
+}
+#section1-Curso-Andamento ul li div {
+  margin-top: 0.3vw;
+  display: flex;
+  align-items: center;
+}
+#section1-Curso-Andamento ul li div svg {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 0.5vw;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Andamento ul li div svg {
+    margin-right: 1vw;
+    width: 8vw;
+    height: 8vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento ul li div svg {
+    margin-right: 4vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
+#section1-Curso-Andamento ul li div div {
+  display: block;
+}
+#section1-Curso-Andamento ul li div div p {
+  color: white;
+  font-size: calc(1vw + 5px);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento ul li div div p {
+    font-size: 3.5vw;
+  }
+}
+#section1-Curso-Andamento ul li a {
+  text-decoration: none;
+  width: 100%;
+}
+#section1-Curso-Andamento ul li a p {
+  color: #a1a1a1;
+  font-size: calc(1vw + 5px);
+  text-align: right;
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Andamento ul li a p {
+    font-size: 3vw;
+  }
+}
+#section1-Curso-Concluido {
+  margin: 0 0 1vw 5vw;
+}
+#section1-Curso-Concluido-Superior {
+  margin: 0 0 0.5vw 3vw;
+  display: flex;
+  align-items: center;
+}
+#section1-Curso-Concluido-Superior h2 {
+  color: white;
+  font-size: calc(1.5vw + 10px);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido-Superior h2 {
+    font-size: 4vw;
+  }
+}
+#section1-Curso-Concluido-Superior svg {
+  width: 5vw;
+  height: 5vw;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido-Superior svg {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+#section1-Curso-Concluido hr {
+  width: 27vw;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Concluido hr {
+    width: 30vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido hr {
+    width: 45vw;
+  }
+}
+#section1-Curso-Concluido ul {
+  display: flex;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0 0 -5vw;
+  }
+}
+#section1-Curso-Concluido ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw 2vw 0vw 1vw;
+  list-style: none;
+  border-radius: 20px;
+  width: 25vw;
+  height: 6vw;
+  padding: 2vw;
+  background-color: #0e1046;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Concluido ul li {
+    width: 32vw;
+    height: 9vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido ul li {
+    width: 75vw;
+    height: 20vw;
+  }
+}
+#section1-Curso-Concluido ul li div {
+  display: flex;
+  align-items: center;
+}
+#section1-Curso-Concluido ul li div svg {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 0.5vw;
+}
+@media (max-width: 1100px) {
+  #section1-Curso-Concluido ul li div svg {
+    margin-right: 1vw;
+    width: 8vw;
+    height: 8vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido ul li div svg {
+    margin-right: 4vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
+#section1-Curso-Concluido ul li div div {
+  display: block;
+}
+#section1-Curso-Concluido ul li div div p {
+  color: white;
+  font-size: calc(1vw + 5px);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media (max-width: 700px) {
+  #section1-Curso-Concluido ul li div div p {
+    font-size: 3.5vw;
+  }
+}
+#section1-Curso-Concluido ul li div div a {
+  text-align: right;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=academico.css.map */

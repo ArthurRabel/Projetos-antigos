@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+#section1 {
+  background-color: #0e1046;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 3vw;
+  margin: 3vw auto;
+}
+#section1-titulo {
+  text-align: center;
+  color: white;
+  margin: 0 auto 3vw;
+  font-size: calc(2vw + 8px);
+}
+#section1-Content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  #section1-Content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#section1-Content-divInfo {
+  color: white;
+  padding: 0 2vw;
+  width: 35vw;
+  margin-bottom: 5vw;
+}
+@media (max-width: 700px) {
+  #section1-Content-divInfo {
+    width: auto;
+  }
+}
+#section1-Content-divInfo-superior {
+  display: flex;
+  align-items: center;
+}
+#section1-Content-divInfo-superior h2 {
+  font-size: calc(2vw + 6px);
+}
+#section1-Content-divInfo-superior svg {
+  width: 5vw;
+  height: 5vw;
+}
+@media (max-width: 1100px) {
+  #section1-Content-divInfo-superior svg {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+}
+@media (max-width: 700px) {
+  #section1-Content-divInfo-superior svg {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+#section1-Content-divInfo #InfoDetalhes {
+  margin-bottom: 1vw;
+}
+#section1-Content-divInfo p {
+  font-size: calc(1vw + 8px);
+}
+
+#matriculaCertificado {
+  max-width: 38vw;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 700px) {
+  #matriculaCertificado {
+    max-width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=academicoId.css.map */

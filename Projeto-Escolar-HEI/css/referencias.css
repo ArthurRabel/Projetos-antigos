@@ -1,0 +1,142 @@
+.Conteudo{
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Conteudo h2{
+    font-size: calc(0.5vw + 13px);
+    text-align: center;
+    margin: 30px auto 10px;
+}
+.Conteudo p{
+    font-size: calc(0.5vw + 11px);
+    margin: 0px auto 20px;
+}
+.Conteudo li{
+    font-size: calc(0.5vw + 11px);
+}
+.Conteudo img{
+    width: 90%;
+}
+.ConteudoFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Name{
+    margin: 30px 0 0;
+    width: 100%;
+}
+.Name p{
+    text-align: end;
+    font-weight: 600;
+}
+
+/*artigo anterior e o proximo*/
+
+.navBottom nav{
+    margin: 0px auto 40px;
+    width: 85%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.navBottom nav a{
+    text-decoration: none;
+    font-size: calc(0.5vw + 13px);
+    color: white;
+    display: flex;
+}
+.navBottom nav a p{
+    margin-top: 3px;
+}
+#IconUp{
+    font-size: calc(0.5vw + 25px);
+    margin: 0px 5px;
+}
+
+@media (min-width:801px) {
+    .Conteudo{width: 80%;}
+    .ConteudoFlex img{width: 35%;margin: 0 5% 0 5%;}
+    .Conteudo h2{font-size: calc(0.5vw + 17px);margin: 35px 0 15px;}
+    .ConteudoFlex p{font-size: calc(0.5vw + 12.5px);width: 60%;margin: 0;}
+    .ConteudoFlex li{font-size: calc(0.5vw + 12.5px);}
+    .navBottom nav{margin: 25px auto 50px;}
+}
+@media (min-width:1020px) {
+    .Conteudo img{width: 60%;}
+    .Conteudo h2{font-size: calc(0.5vw + 20px);margin: 40px 0 30px;}
+    .Conteudo p{font-size: calc(0.5vw + 15px);}
+    .Conteudo li{font-size: calc(0.5vw + 15px);}
+    .navBottom nav{margin: 30px auto 60px;}
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.links{
+    font-family: 'Roboto', sans-serif;
+}
+.links:hover{
+    color: white;
+    text-decoration: underline;
+}
+h1, h2, h3{
+    color: rgba(44, 62, 80, 1);
+}
+.seta{
+    width: 50%;
+    margin-top: 20px;
+}
+.navBottom #antprox{
+    margin: 14px auto -64px;
+    width: 85%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    margin-top: 40px;
+}
+#linktextos{
+    color: #5271FF;
+}
+#linktextos:hover{
+    color: #354aaa;
+    text-decoration: underline;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Raleway:wght@300&display=swap');
+#bibliografia{
+    font-family: 'Poppins', sans-serif;
+    color: #5272ffde;
+    margin-bottom: 8px;
+}
+#linkh2{
+    font-family: 'Poppins', sans-serif;
+    color: #5272ffde;
+    text-decoration: underline;
+}
+#linkh2:hover{
+    font-family: 'Poppins', sans-serif;
+    color: #4660d6
+}
+.Conteudo ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+#li{
+    padding: 20px 0;
+}
+#sec{
+    background-color: #ffffff;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #002fff3b;
+}
+body{
+    background-image: linear-gradient(to bottom, #52b1ff, #50c8ff, #52d7ff, #52f3ff);
+}
+
+/* <li id="li"><strong>Nome do Artigo</strong>Nome da Página, data. Disponível em: <a id="linktextos" href="#" target="_blank" rel="external">link</a>. Acesso em: data.</li> */

@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Montserrat:wght@100;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+@font-face {
+    font-family: AttackGraffiti;
+    src: url(../midia/font/aAttackGraffiti.otf);
+}
+@font-face {
+    font-family: PixoRetoSP;
+    src: url(../midia/font/PixoRetoSP-Regular.otf);
+}
+
+/*Esses style serão aplicados independetes do largura da tela do usuario até que sejam reescritos*/
+
+/*Header*/
+.Header-Main{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.192);
+    background-color: white;
+}
+.Header-Main__Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 65px;
+    width: 95%;
+}
+.Header-Main__Options{
+    background-color: white;
+}
+.Header-Main__Options a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5vw + 15px);
+    color: black;
+}
+
+/*componentes comuns*/
+.Wrapper-Main{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.Tittle--Attack{
+    font-family: AttackGraffiti;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 4px;
+    font-size: calc(0.5vw + 20px);
+}
+.Tittle--Common{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(0.5vw + 20px);
+}
+.Text--Common{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(0.5vw + 13px);
+}
+
+/*footer*/
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    height: 50px;
+}
+.Footer__Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.Footer__P{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5vw + 10px);
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+}
+.Footer__Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:320px) and (max-width: 800px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+/*Esses style serão aplicados apenas se a largura da tela for maior que 320px e menor que 800px*/   
+    
+    /*header*/
+    .Header-Main__Bnt{
+        display: flex;
+        padding: .10rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    .Header-Main__Logo{
+        height: 40px;
+    }
+
+    .Header-Main__Hamburger{
+        border-top: 3px solid;
+        width: 40px;
+    }
+    .Header-Main__Hamburger::after, .Header-Main__Hamburger::before{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 10px;
+        transition: .3s;
+        position: relative;
+    }
+    .Header-Main__Options{
+        display: block;
+        position: absolute;
+        box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.171);
+        width: 0px;
+        height: calc(100vh - 100px);
+        top: 66px;
+        right: 0px;
+        transition: .3s;
+        z-index: 1000 ; 
+        
+    }
+    .Header-Main__Options li{
+        padding: 15px;
+        display: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+    }
+    
+    /*Animação hamburguer do menu*/
+    .Header-Main__Nav--Active .Header-Main__Options{
+        width: 50vw;
+    }
+    .Header-Main__Nav--Active .Header-Main__Options li{
+        display: block;
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger{
+        border-top-color: transparent;
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger::after{
+        transform: rotate(-135deg);
+        top: -13px;
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    /*Footer*/
+    .Footer__Svg--Instagram{
+        width: 25px;
+        max-height: 50px;
+    }
+    .Footer__Svg--Gmail{
+        width: 20px;
+        max-height: 50px;
+    }
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+/*Esses styles serão aplicados apenas se for a largura for maior que 480px*/
+
+    /*componentes comuns*/
+    .Text--Common{
+        font-family: 'Roboto', sans-serif;
+        font-size: calc(0.5vw + 13px);
+    }
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+/*Esses styles serão aplicados apenas se for a largura for maior que 600px*/
+
+    /*componentes comuns*/
+    .Wrapper-Main{
+        width: 85%;
+    }
+    .Text--Common{
+        font-family: 'Roboto', sans-serif;
+        font-size: calc(0.5vw + 11px);
+    }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+/*Esses styles serão aplicados apenas se for a largura for maior que 801px*/
+
+    /*header*/
+    .Header-Main__Nav{
+        height: 80px;
+    }
+
+    .Header-Main__Logo{
+        height: 50px;
+    }
+
+    .Header-Main__Bnt{
+        display: none;
+    }
+    .Header-Main__Options{
+        display: flex;
+    }
+
+    .Header-Main__Options a{
+        display: block;
+        font-size: calc(0.5vw + 13px);
+        padding: 15px;
+        transition: .5s;
+    }
+    .Header-Main__Options a:hover{
+        background-color: rgb(245, 245, 245);
+    }
+    .Header-Main__Href--Home{
+        border-bottom: 2px solid;
+        border-image: url('../midia/img/header/borda.png') 5 / 0 0 2px 0 stretch;
+    }
+    .Header-Main__Href--Relatos{
+        border-bottom: 2px solid #7F35B2;
+    }
+    .Header-Main__Href--Artigos{
+        border-bottom: 2px solid #FCE300;
+    }
+    .Header-Main__Href--VideoCast{
+        border-bottom: 2px solid #3EB3DF;
+    }
+    .Header-Main__Href--Glossario{
+        border-bottom: 2px solid #28D499;
+    }
+    .Header-Main__Href--Sobre{
+        border-bottom: 2px solid #7F35B2;
+    }
+
+    /*componentes comuns*/
+    .Tittle--Attack,.Tittle--Common{
+        font-size: calc(0.5vw + 20px);
+    }
+
+    /*Footer*/
+    .Footer{
+        height: 60px;
+    }
+    .Footer__Svg--Instagram{
+        width: 30px;
+        max-height: 60px;
+    }
+    .Footer__Svg--Gmail{
+        width: 25px;
+        max-height: 60px;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+/*Esses styles serão aplicados apenas se for a largura for maior que 1025px*/
+
+    /*Header*/
+    .Header-Main__Nav{
+        width: 90%;
+    }
+    .Header-Main__Options a{
+        font-size: calc(0.5vw + 15px);
+    }
+
+    /*componentes comuns*/
+    .Wrapper-Main{
+        width: 80%;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+/*Esses styles serão aplicados apenas se for a largura for maior que 1281px*/
+
+    /*Header*/
+    .Header-Main__Options a{
+        font-size: 22px;
+    }
+
+    /*componentes comuns*/
+    .Tittle--Attack,.Tittle--Common{
+        font-size: 50px;
+    }
+    .Text--Common{
+        font-size: 18px;
+    }
+
+    /*Footer*/
+    .Footer{
+        height: 70px;
+    }
+    .Footer__P{
+        font-size: 16px;
+    }
+    .Footer__Svg--Instagram{
+        width: 35px;
+        max-height: 70px;
+    }
+    .Footer__Svg--Gmail{
+        width: 30px;
+        max-height: 70px;
+    }
+}

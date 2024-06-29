@@ -1,0 +1,128 @@
+@media (min-width:320px) {
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Poppins:wght@200&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    .imgArtg{
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    .centrarImg{
+        text-align: center;
+    }
+
+    .titulo-principal{
+        font-family: 'Baloo Da 2', cursive;
+        font-weight: bold;
+        padding-top: 30px;
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 5px solid #FCE300;
+    }
+
+    .titulo-secundario{
+        padding: 25px 0px 10px 0px;
+        font-family: 'Baloo Da 2', cursive;
+        font-size: 18px;
+    }
+
+    .titulo-terceario{
+        padding: 50px 0px 10px 0px;
+        font-family: 'Baloo Da 2', cursive;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: #FCE300;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: #c5b101;
+    }
+
+    main{
+        width: 70vw;
+        margin: auto;
+    }
+
+    p{
+        word-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    span{
+        color: #FCE300;
+    }
+
+    .li{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        line-height: 25px;
+        font-size: 14px;
+        padding-left: 15px;
+        color: #000000;
+    }
+
+    .sinalzin{
+        font-size: 25px;
+        color: #000000;
+    }
+
+    .vejaTbm{
+        border-left: solid #FCE300;
+        background-color: #fce30042;
+        padding-left: 8px;
+        margin-top: 50px;   
+        margin-bottom: 25px;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media (min-width:480px) {}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) {
+    .vejaTbm{
+        width: 65%;
+        margin: 20px auto 25px auto;
+    }
+}
+@media (min-width:1025px) {
+    .titulo-principal{
+        font-size: 25px;
+    }
+
+    .titulo-secundario{
+        font-size: 23px;
+    }
+
+    .titulo-terceario{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .li{
+        font-size: 17px;
+    }
+
+    .sinalzin{
+        font-size: 31px;
+    }
+}
+@media (min-width:1281px) {
+    .vejaTbm{
+        width: 50%;
+        margin: 35px auto 25px auto;
+    }
+}

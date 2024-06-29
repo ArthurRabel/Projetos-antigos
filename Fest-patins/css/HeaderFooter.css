@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;600&family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height:100%;
+}
+body{
+    background-color: #111111;
+}
+p{
+    font-family: "Poppins";
+    color: white;
+    font-size: calc(0.7vw + 10px);
+}
+h1, h2{
+    font-family: "Poppins";
+    color: white;
+    font-size: calc(1vw + 13px);
+    font-weight: 300;
+}
+.header{
+    background-color: #171717;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__Logo{
+    width: 185px;
+}
+.header__ul{
+    display: flex;
+    list-style-type: none;
+}
+.header__a{
+    font-family: 'Chakra Petch';
+    color: white;
+    text-decoration: none;
+    font-size: calc(1vw + 13px);
+}
+.footer{
+    width: 100%;
+    background-color: #A23EB8;
+    position: absolute;
+    bottom: 0;
+}
+.footer__div{
+    margin: auto;
+    padding: 15px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:480px) {
+    
+}
+@media (min-width:801px) {
+    p{font-size: calc(0.7vw + 12px);}
+}
+@media (min-width:1025px) {
+    p{font-size: calc(0.7vw + 9px);}
+    .header__Logo{
+        width: 255px;
+    }
+}
+@media (min-width:1281px) {
+    p{font-size: calc(0.7vw + 5px);}
+    .header__a{
+        font-size: calc(0.7vw + 12px);
+    }
+}

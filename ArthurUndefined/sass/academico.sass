@@ -1,0 +1,187 @@
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap')
+
+#section1
+    &-tituloPrincipal
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 2vw
+        color: white
+        font-size: calc(2vw + 10px)
+        font-family:'Zen Maru Gothic', sans-serif
+        @media (max-width: variables.$breakpoint-tablet)
+            font-size: calc(2vw + 15px)
+        @media (max-width: variables.$breakpoint-cell)
+            font-size: calc(2vw + 20px)
+            margin: 4vw
+
+    &-Curso
+        &-Andamento
+            margin: 0 0 3vw 5vw
+            &-Superior
+                margin: 0 0 0.5vw 3vw
+                display: flex
+                align-items: center
+                h2
+                    color: white
+                    font-size: calc(1.5vw + 10px)
+                    font-family:'Zen Maru Gothic', sans-serif
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 4vw
+                svg
+                    width: 5vw
+                    height: 5vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        width: 10vw
+                        height: 10vw
+
+            hr
+                width: 30vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    width: 35vw
+                @media (max-width: variables.$breakpoint-cell)    
+                    width: 55vw
+                    
+            ul
+                display: flex
+                @media (max-width: variables.$breakpoint-cell)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin: 2vw 0 0 -5vw
+                
+                li
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin: 2vw 2vw 0vw 1vw
+                    width: 25vw
+                    height: 6vw
+                    list-style: none
+                    border-radius: 20px
+                    padding: 2vw
+                    background-color: variables.$background-color2
+                    @media (max-width: variables.$breakpoint-tablet)
+                        width: 32vw
+                        height: 9vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        width: 75vw
+                        height: 20vw
+
+                    div
+                        margin-top: 0.3vw
+                        display: flex
+                        align-items: center
+                        svg
+                            width: 5vw
+                            height: 5vw
+                            margin-right: 0.5vw
+                            @media (max-width: variables.$breakpoint-tablet)
+                                margin-right: 1vw
+                                width: 8vw
+                                height: 8vw
+                            @media (max-width: variables.$breakpoint-cell)
+                                margin-right: 4vw
+                                width: 15vw
+                                height: 15vw
+                            
+                        div
+                            display: block
+                            p
+                                color: white
+                                font-size: calc(1vw + 5px)
+                                font-family:'Zen Maru Gothic', sans-serif
+                                @media (max-width: variables.$breakpoint-cell)
+                                    font-size: 3.5vw
+                    a
+                        text-decoration: none
+                        width: 100%
+                        p
+                            color: #a1a1a1
+                            font-size: calc(1vw + 5px)
+                            text-align: right
+                            text-decoration: none
+                            @media (max-width: variables.$breakpoint-cell)
+                                font-size: 3vw
+
+        &-Concluido
+            margin: 0 0 1vw 5vw
+            &-Superior
+                margin: 0 0 0.5vw 3vw
+                display: flex
+                align-items: center
+                h2
+                    color: white
+                    font-size: calc(1.5vw + 10px)
+                    font-family:'Zen Maru Gothic', sans-serif
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 4vw
+                svg
+                    width: 5vw
+                    height: 5vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        width: 10vw
+                        height: 10vw
+                    
+            hr
+                width: 27vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    width: 30vw
+                @media (max-width: variables.$breakpoint-cell)    
+                    width: 45vw
+            ul
+                display: flex
+                @media (max-width: variables.$breakpoint-cell)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin: 2vw 0 0 -5vw
+                li
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin: 2vw 2vw 0vw 1vw
+                    list-style: none
+                    border-radius: 20px
+                    width: 25vw
+                    height: 6vw
+                    padding: 2vw
+                    background-color: variables.$background-color2
+                    @media (max-width: variables.$breakpoint-tablet)
+                        width: 32vw
+                        height: 9vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        width: 75vw
+                        height: 20vw
+
+                    div
+                        display: flex
+                        align-items: center
+                        svg
+                            width: 5vw
+                            height: 5vw
+                            margin-right: 0.5vw
+                            @media (max-width: variables.$breakpoint-tablet)
+                                margin-right: 1vw
+                                width: 8vw
+                                height: 8vw
+                            @media (max-width: variables.$breakpoint-cell)
+                                margin-right: 4vw
+                                width: 15vw
+                                height: 15vw
+
+                        div
+                            display: block
+                            p
+                                color: white
+                                font-size: calc(1vw + 5px)
+                                font-family:'Zen Maru Gothic', sans-serif
+                                @media (max-width: variables.$breakpoint-cell)
+                                    font-size: 3.5vw
+                            a
+                                text-align: right
+                                text-decoration: none

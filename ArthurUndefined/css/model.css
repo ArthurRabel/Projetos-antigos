@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #050732;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2, h3, p {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+#sectionMenu {
+  height: 4vw;
+  width: 100vw;
+  max-width: 100%;
+  border-bottom: 0.5px solid;
+  border-bottom-color: #6265a5;
+  background-color: #050732;
+  display: flexbox;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  #sectionMenu {
+    height: 8vw;
+  }
+}
+@media (max-width: 700px) {
+  #sectionMenu {
+    height: 15vw;
+  }
+}
+#sectionMenu-div {
+  height: 100%;
+  width: 20vw;
+}
+@media (max-width: 1100px) {
+  #sectionMenu-div {
+    width: 27.5vw;
+  }
+}
+@media (max-width: 700px) {
+  #sectionMenu-div {
+    width: 46.5vw;
+  }
+}
+#sectionMenu-div span {
+  font-size: 3vw;
+  color: #ffffff;
+  margin: 2% 7%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+@media (max-width: 1100px) {
+  #sectionMenu-div span {
+    font-size: 6.5vw;
+  }
+}
+@media (max-width: 700px) {
+  #sectionMenu-div span {
+    font-size: 12vw;
+  }
+}
+#sectionMenu-div span:hover {
+  color: #9541ff;
+}
+
+#optionsMenu {
+  background-color: #0e1046;
+  padding: 0 0 100vh 0;
+  position: absolute;
+  z-index: 100;
+  display: none;
+  box-shadow: 1px 0 10px #050732;
+}
+#optionsMenu ul {
+  list-style: none;
+}
+#optionsMenu ul li {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+#optionsMenu ul li:hover {
+  background-color: #2a2c6a;
+}
+@media (max-width: 700px) {
+  #optionsMenu ul li {
+    padding: 2vw 5vw;
+    margin: 2vw;
+  }
+}
+#optionsMenu ul li a {
+  padding: 1.5vw 2.6vw 1.5vw 10vw;
+  text-align: right;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+}
+@media (max-width: 1100px) {
+  #optionsMenu ul li a {
+    padding: 1.5vw 2.6vw 1.5vw 15vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 700px) {
+  #optionsMenu ul li a {
+    font-size: 3vw;
+  }
+}
+
+footer {
+  color: #babbc9;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #0e1046;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  padding: calc(1vw + 8px);
+  font-size: calc(1vw + 8px);
+}
+
+/*# sourceMappingURL=menu.css.map */

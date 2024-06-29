@@ -1,0 +1,40 @@
+/*artigo anterior e o proximo*/
+
+.navBottom nav{
+    margin: 40px auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.navBottom nav a{
+    text-decoration: none;
+    font-size: calc(0.5vw + 13px);
+    color: var(--cor-principal);
+    display: flex;
+}
+.navBottom nav a p{
+    margin-top: 3px;
+}
+#IconUp{
+    font-size: calc(0.5vw + 25px);
+    margin: 0px 5px;
+}
+
+/*exemplo de conteudo, pode remover*/
+.Conteudo{
+    width: 80%;
+    height: 70vh;
+    margin: 40px auto;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Conteudo h2{
+    font-size: calc(0.5vw + 15px);
+}
+.Conteudo p{
+    text-align: center;
+    font-size: calc(0.5vw + 10px);
+}
